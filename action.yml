@@ -1,0 +1,9 @@
+name: 'smilint'
+description: 'Run smilint on every MIB file in a repository'
+inputs:
+  warning_level:
+    description: 'Report errors and warnings up to the given severity level (4).'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
